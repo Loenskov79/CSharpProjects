@@ -1,0 +1,14 @@
+### Get all books
+GET https://localhost:7015/api/books
+
+### Get specific book  
+GET https://localhost:7015/api/books/1
+
+### Create new book
+POST https://localhost:7015/api/books
+Content-Type: application/json
+
+{
+  "title": "Effective C#",
+  "author": "Bill Wagner"
+}

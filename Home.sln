@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeProject", "HomeProject\HomeProject.csproj", "{733B9834-00BA-40F1-8C87-365E113CD416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebAPI", "MyWebAPI\MyWebAPI.csproj", "{169284B6-67F0-40B4-824E-5434A772ACD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{733B9834-00BA-40F1-8C87-365E113CD416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733B9834-00BA-40F1-8C87-365E113CD416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733B9834-00BA-40F1-8C87-365E113CD416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733B9834-00BA-40F1-8C87-365E113CD416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{169284B6-67F0-40B4-824E-5434A772ACD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169284B6-67F0-40B4-824E-5434A772ACD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169284B6-67F0-40B4-824E-5434A772ACD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169284B6-67F0-40B4-824E-5434A772ACD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
