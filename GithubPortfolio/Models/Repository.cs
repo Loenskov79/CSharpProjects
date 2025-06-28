@@ -1,4 +1,6 @@
-﻿namespace GithubPortfolio.Models
+﻿using System.Text.Json.Serialization;
+
+namespace GithubPortfolio.Models
 {
     public class Repository
     {
@@ -8,6 +10,7 @@
         public int Stars { get; set; }
 
         public int UserId { get; set; }
+        [JsonIgnore]
         public User User { get; set; }
     }
 }

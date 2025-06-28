@@ -2,6 +2,7 @@
 using GithubPortfolio.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GithubPortfolio.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250628135515_DummyData")]
+    partial class DummyData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,19 +61,7 @@ namespace GithubPortfolio.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("GitHubUsername")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Username")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -82,18 +73,12 @@ namespace GithubPortfolio.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "loenskov@example.com",
-                            GitHubUsername = "Loenskov79",
-                            Password = "password123",
-                            Username = "Loenskov"
+                            GitHubUsername = "Loenskov"
                         },
                         new
                         {
                             Id = 2,
-                            Email = "kristian@example.com",
-                            GitHubUsername = "Kristian",
-                            Password = "password123",
-                            Username = "kristian_user"
+                            GitHubUsername = "Kristian"
                         });
                 });
 
